@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="body">
+    <canvas id='c'></canvas>
+    <div class="anim">
+        <div class="cover">
+            <div class="main-menu">
+                <nav class="nav">
+                    <div class="logo">
+                        <div class="logo-circle">
+                            <div class="static-circle"></div>
+                        </div>
+                        <h1>IELTS <span style="color: rgba(235, 31, 82, 1.0);">CORE</span></h1>
+                    </div>
+                    <div class="links">
+                        <ion-icon class="toggle" name="chevron-down-outline"></ion-icon>
+                    </div>
+                </nav>
+                <div class="main-menu-text">
+                    <div class="logo-text-h1">
+                        <h1 class="main-title">IELTS <span style=" color: rgba(235, 31, 82, 1.0); text-shadow: 0px 0px 20px rgba(235, 31, 82, 1);">Core</span></h1>
+                    </div>
+                    <div class="logo-text-p">
+                        <h2 id="element"></h2>
+                    </div>
+                </div>
+                <div class="showlink">
+                    <h1>Ingliz tili</h1>
+                    <h1>Rus tili</h1>
+                    <h1>Nemis tili</h1>
+                    <h1>Koreys tili</h1>
+                    <h1>Matematika</h1>
+                </div>
+            </div>
+            <div class="second-section">
+                <div class="second-section-text">
+                    <h1>we teach</h1>
+                </div>
+                <div class="second-section-card">
+                    <div class="cards">
+                        <h1>TARIX</h1>
+                    </div>
+                    <div class="cards">
+                        <h1>ONA TILI </h1>
+                    </div>
+                    <div class="cards">
+                        <h1>RUS TILI</h1>
+                    </div>
+                    <div class="cards">
+                        <h1>NEMIS TILI</h1>
+                    </div>
+                    <div class="cards">
+                        <h1>KOREYS TILI</h1>
+                    </div>
+                </div>
+                <div class="second-section-text">
+                    <h1>Our teachers</h1>
+                </div>
+                <div class="second-section-card" id="second-section-card">
+                    <!-- cards will render by js -->
+                </div>
+                <div class="second-section-card">
+                    <form id="registrationForm" onsubmit="sendEmail(); reset(); return false;">
+                        <label for="subjects">Выберите предметы:</label>
+                        <select id="subjects" name="subjects">
+                            <option value="math">Математика</option>
+                            <option value="science">Наука</option>
+                            <option value="history">История</option>
+                        </select>
+                        <input type="text" id="firstName" name="firstName" placeholder="ismingizni yozing">
+                        <input type="text" id="lastName" name="lastName" placeholder="familiyangizni yozing">
+                        <input type="number" id="age" name="age" placeholder="yoshingizni kiriting">
+                        <input type="tel" id="phone" name="phone" placeholder="telefon nomeringizni yozing" pattern="[+]\d{12}">
+                        <button type="submit">Отправить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="js/email.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/anim.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="js/type.js"></script>
+</body>
+
+</html>
