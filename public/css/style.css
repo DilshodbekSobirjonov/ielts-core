@@ -476,10 +476,13 @@ button:hover {
 }
 
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1480px) {
   .cards {
     width: 300px;
     margin: 20px;
+  }
+  .main-title {
+    font-size: 140px !important;
   }
 }
 
@@ -517,6 +520,17 @@ button:hover {
   }
 }
 
+@media screen and (max-width: 685px) {
+  .cards {
+    width: 200px;
+    height: 150px;
+    margin: 20px;
+  }
+  .main-title {
+    font-size: 115px !important;
+  }
+}
+
 @media screen and (max-width: 665px) {
   .cards {
     width: 200px;
@@ -531,7 +545,7 @@ button:hover {
     width: 90%;
   }
   .main-title {
-    font-size: 110px !important;
+    font-size: 100px !important;
   }
   #element {
     font-size: 30px;
@@ -549,7 +563,7 @@ button:hover {
     width: 99%;
   }
   .main-title {
-    font-size: 100px !important;
+    font-size: 90px !important;
   }
   #element {
     font-size: 30px;
@@ -595,4 +609,7 @@ button:hover {
   .logo-circle {
     width: 10px;
   }
+  .main-title {
+    font-size: 70px !important;
+  } 
 }
