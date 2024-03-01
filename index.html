@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body class="body">
@@ -36,7 +37,7 @@
                     <h1 onclick="scrollToSection('main-menu')">Asosiy</h1>
                     <h1 onclick="scrollToSection('course')">Kurslar</h1>
                     <h1 onclick="scrollToSection('second-section-card')">Oqituvchilar</h1>
-                    <h1 onclick="scrollToSection('second-section-sertificates')">Natijalar</h1>
+                    <h1 onclick="scrollToSection('result')">Natijalar</h1>
                     <h1 onclick="scrollToSection('form')">Kursga yozilish</h1>
                 </div>
             </div>
@@ -45,25 +46,25 @@
                     <h1>we teach</h1>
                 </div>
                 <div class="second-section-card" id="course">
-                    <div class="cards" onclick="scrollToFormAndSelectOption('INGLIZ TILI')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('INGLIZ TILI')" data-aos="zoom-in">
                         <h1>INGLIZ TILI</h1>
                     </div>
-                    <div class="cards" onclick="scrollToFormAndSelectOption('TARIX')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('TARIX')" data-aos="zoom-in">
                         <h1>TARIX</h1>
                     </div>
-                    <div class="cards" onclick="scrollToFormAndSelectOption('ONA TILI')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('ONA TILI')" data-aos="zoom-in">
                         <h1>ONA TILI</h1>
                     </div>
-                    <div class="cards" onclick="scrollToFormAndSelectOption('RUS TILI')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('RUS TILI')" data-aos="zoom-in">
                         <h1>RUS TILI</h1>
                     </div>
-                    <div class="cards" onclick="scrollToFormAndSelectOption('NEMIS TILI')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('NEMIS TILI')" data-aos="zoom-in">
                         <h1>NEMIS TILI</h1>
                     </div>
-                    <div class="cards" onclick="scrollToFormAndSelectOption('KOREYS TILI')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('KOREYS TILI')" data-aos="zoom-in">
                         <h1>KOREYS TILI</h1>
                     </div>
-                    <div class="cards" onclick="scrollToFormAndSelectOption('MENTAL ARIFMETIKA')">
+                    <div class="cards" onclick="scrollToFormAndSelectOption('MENTAL ARIFMETIKA')" data-aos="zoom-in">
                         <h1>MENTAL ARIFMETIKA</h1>
                     </div>
                 </div>
@@ -83,7 +84,7 @@
                     <h1 class="l-text">Fill the form if you want to study</h1>
                 </div>
                 <div class="second-section-card" id="form">
-                    <form id="registrationForm" onsubmit="sendEmail(); reset(); return false;">
+                    <form id="registrationForm" onsubmit="sendEmail(); reset(); return false;" data-aos="zoom-in-up">
                         <h1 for="subjects">Kurslarni tanlang:</h1>
                         <select id="subjects" name="subjects">
                             <option value="INGLIZ TILI">INGLIZ TILI</option>
@@ -120,7 +121,11 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/type.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
