@@ -2,6 +2,7 @@ function createAndAddUserCard(userData) {
     const cardContainer = document.createElement("div");
     cardContainer.className = "card-container";
     cardContainer.setAttribute("data-aos","zoom-in");
+    cardContainer.setAttribute("data-aos-duration","550");
 
     const proLabel = document.createElement("span");
     proLabel.className = "pro";
