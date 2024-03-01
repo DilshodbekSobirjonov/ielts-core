@@ -1,6 +1,7 @@
     function CertificateBox(text, imgUrl) {
         var certificateDiv = document.createElement('div');
         certificateDiv.className = 'sertificate';
+        certificateDiv.setAttribute("data-aos","zoom-in");
 
         var certificateWrapper = document.createElement('div');
         certificateWrapper.className = 'sertificate-wrapper';
