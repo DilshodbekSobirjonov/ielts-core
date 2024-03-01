@@ -2,6 +2,7 @@
         var certificateDiv = document.createElement('div');
         certificateDiv.className = 'sertificate';
         certificateDiv.setAttribute("data-aos","zoom-in");
+        certificateDiv.setAttribute("data-aos-duration","550");
 
         var certificateWrapper = document.createElement('div');
         certificateWrapper.className = 'sertificate-wrapper';
